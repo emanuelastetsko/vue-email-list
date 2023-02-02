@@ -16,7 +16,13 @@
         <div id="app">
 
             <main>
-
+                <h1>{{titolo}}</h1>
+                <button @click="generatoreEmail()">
+                    Genera nuova lista di indirizzi email
+                </button>
+                <ul v-for="email in emails">
+                    <li>{{email}}</li>
+                </ul>
             </main>
 
         </div>
@@ -24,7 +30,7 @@
 
         <!-- AXIOS -->
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+        
         <!-- VUE -->
         <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     

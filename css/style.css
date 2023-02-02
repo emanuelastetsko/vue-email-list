@@ -4,3 +4,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* MAIN */
+main{
+    margin: 20px 40px;
+}
